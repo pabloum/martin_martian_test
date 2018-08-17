@@ -209,7 +209,7 @@ namespace GAME{
     void OnArrowKeyPressed(const Uint32& kbEvent, const Sint32& kbKey){
 
         auto& componentManager          = ECS::ComponentManager::GetInstance();
-        auto  shipInformationComponent  = ECS::ComponentManager::GetInformationComponent(backId); // backId
+        auto  shipInformationComponent  = ECS::ComponentManager::GetInformationComponent(shipId); // backId
         auto  kinematicTuples           = shipInformationComponent.GetKinematicTuples();
         auto  [posId, speedId, accelId] = kinematicTuples[1];
 
