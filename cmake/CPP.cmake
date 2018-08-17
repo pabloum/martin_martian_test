@@ -1,0 +1,17 @@
+function (TRY_17)
+	message(STATUS "Trying C++17")
+	#set(CPP14 "–std=c++14")
+	set(CMAKE_CXX_STANDARD 17 PARENT_SCOPE)
+endfunction()
+
+function (USE_14)
+	message(STATUS "Using C++14")
+	#set(CPP14 "–std=c++14")
+	set(CMAKE_CXX_STANDARD 14 PARENT_SCOPE)
+endfunction()
+function (USE_11)
+	message(STATUS "Using C++11")
+	set(CPP11 "–std=c++11")
+	set(CMAKE_CXX_FLAGS CPP11)
+endfunction()
+
